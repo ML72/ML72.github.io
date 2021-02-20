@@ -1,2 +1,3 @@
 # ML72.github.io
-Personal GitHub Website
+Welcome! This is code for my personal GitHub website!
+You can check out the site at https://ML72.github.io 
