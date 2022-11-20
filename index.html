@@ -1,68 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<title>ML72</title>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://kit.fontawesome.com/63ec6f8c9f.js" crossorigin="anonymous"></script>
+		<!-- Meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<title>Michael Li</title>
+
+		<!-- Materialize Import -->
+		<link rel="stylesheet" href="./css/materialize.min.css">
+		<script src="./js/materialize.min.js"></script>
+		
+		<!-- AOS Import -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- Chart.js Import -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+		<!-- Custom Imports -->
+		<link rel="stylesheet" href="./css/styles.css">
+		<script src="./js/init.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<h1 class="center-align">Welcome!</h1>
-			<hr>
-			<h5>Hi! My name is Michael, and I mainly code in Java and JavaScript. I'm actively learning web development right now. Please take a look at my projects below!</h5>
-			<div class="row m-top">
-				<div class="col s6 xl3">
-					<div class="card blue darken-4 hover">
-						<div class="card-content white-text">
-							<span class="card-title">Mutorials</span>
-							<p>A free, adaptive, web-based science trainer that I started with friends</p>
-						</div>
-						<div class="card-action">
-						  <a href="https://www.mutorials.org" target="_blank">View Website</a>
-						</div>
+
+		<main>
+			<div class="section container">
+				<div class="row">
+					<div class="col s12 m4 push-m8">
+						<img class="responsive-img circle profile-pic" src="static/profile.jpg" data-aos="zoom-in-left" data-aos-delay="150">
 					</div>
-				</div>
-				<div class="col s6 xl3">
-					<div class="card orange darken-4 hover">
-						<div class="card-content white-text">
-							<span class="card-title">JavaChess</span>
-							<p>A Minimax-based chess engine written in Java</p>
-						</div>
-						<div class="card-action">
-						  <a href="https://github.com/ML72/JavaChess" target="_blank">View Respository</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s6 xl3">
-					<div class="card purple darken-4 hover">
-						<div class="card-content white-text">
-							<span class="card-title">Social Media Bot</span>
-							<p>A bot to help spam your friends on social media!</p>
-						</div>
-						<div class="card-action">
-						  <a href="https://github.com/ML72/SocialMedia-Bot" target="_blank">View Respository</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s6 xl3">
-					<div class="card green darken-4 hover">
-						<div class="card-content white-text">
-							<span class="card-title">More coming...</span>
-							<p>I'm working on something, I promise! Check back later :)</p>
-						</div>
-						<div class="card-action">
-						  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Don't click</a>
-						</div>
+					<div class="col s12 m8 pull-m4">
+						<h1 class="right-align center-s" data-aos="zoom-in-right">Hello, I'm Michael!</h1>
+						<h4 class="right-align center-s" data-aos="zoom-in-right" data-aos-delay="300">I am an aspiring and creative software developer pursuing an innovative future in CS.</h4>
 					</div>
 				</div>
 			</div>
-			<div class="m-top center-align">
-				<a class="btn-floating btn-large lime darken-4 hover" href="https://github.com/ML72" target="_blank"><i class="fab fa-github"></i></a
-=			</div>
-		</div>
+
+			<!-- TODO: write this later! -->
+			<!--<div class="section section-dark">
+				<div class="container">
+					<h2 class="center-align" data-aos="zoom-in">Personal Highlights</h2>
+					<p>Talk about accomplishments: HCII22, certifications, and leadership</p>
+				</div>
+			</div>-->
+
+			<div class="section container">
+				<h2 class="center-align" data-aos="zoom-in">Technical Skills</h2>
+				<div class="row">
+					<div class="col s12 m6" data-aos="zoom-in">
+						<p class="center">Backend Skills</p>
+						<canvas id="backend-skills-chart"></canvas>
+					</div>
+					<div class="col s12 m6" data-aos="zoom-in">
+						<p class="center">Frontend Skills</p>
+						<canvas id="frontend-skills-chart"></canvas>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- TODO: write this later! -->
+			<!--<div class="section section-dark">
+				<div class="container">
+					<h2 class="center-align" data-aos="zoom-in">Project Highlights</h2>
+					<p>Talk about projects: Mutorials, SReading, Dabble</p>
+				</div>
+			</div>-->
+
+			<div class="section container">
+				<h2 class="center-align" data-aos="zoom-in">Interests</h2>
+				<p data-aos="fade-right">Other than coding, I also do...</p>
+				<ul data-aos="fade-left">
+					<li>☯️ Taichi: Taichi is a form of traditional Chinese martial arts which helps me destress and maintain regular exercise.</li>
+					<li>♟️ Chess: I play casually on <a href="https://www.chess.com/member/ML72" target="_blank">chess.com</a> and formally for my high school team. Want to play a game?</li>
+					<li>🏀 Basketball: I'm not very good, but that doesn't stop me from regularly hooping with friends!</li>
+					<li>📜 Chinese Poetry: I think I'm alone... Please let me know if I'm wrong. 粗缯大布裹生涯，腹有诗书气自华！</li>
+					<li>🎼 Currently working on my music & art skills too!</li>
+				</ul>
+
+			</div>
+		</main>
+		
+		<footer class="page-footer section-dark">
+			<div class="container">
+				<h4 class="center-align">Contact Me</h4>
+
+				<div class="row">
+					<div class="col m6 s12">
+						<p class="small-text center"><img src="static/social-media-icons/email.png" class="social-media-icon" />
+							<a href="mailto: ml10872@uw.edu">ml10872@uw.edu</a>
+						</p>
+					</div>
+					<div class="col m6 s12">
+						<p class="small-text center"><img src="static/social-media-icons/linkedin.png" class="social-media-icon" />
+							<a href="https://www.linkedin.com/in/michaelli11233/" target="_blank">michaelli11233</a>
+						</p>
+					</div>
+					<div class="col m6 s12">
+						<p class="small-text center"><img src="static/social-media-icons/github.png" class="social-media-icon" />
+							<a href="https://github.com/ML72" target="_blank">ML72</a>
+						</p>
+					</div>
+					<div class="col m6 s12">
+						<p class="small-text center"><img src="static/social-media-icons/discord.png" class="social-media-icon" />
+							<a href="https://discord.com/" target="_blank">ML72#2092</a>
+						</p>
+					</div>
+					<!-- Possibly add more such as phone & Instagram later? -->
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container center">
+					Made using the <a href="http://materializecss.com" target="_blank">Materialize</a> styling framework
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
