@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  border: 6px solid purple; 
   border-radius: 50% !important;
 }
 
@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 16px !important;
   background: #fff;
-  color: #00796b;
+  color: purple;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #c193d2 repeat;
   position: relative;
 }
 
@@ -351,17 +351,8 @@ h3 {
   border-bottom: 5px solid #24305e;
 }
 
-#intro.section .teal {
+#intro.section .purple {
   padding: 0 10px;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .waves-effect.waves-blue .waves-ripple {
@@ -562,20 +553,16 @@ small {
   color: #666 !important;
 }
 
-/* main .teal-text */
+/* main .purple-text */
 
-.teal-text {
-  color: #008073 !important;
+.purple-text {
+  color: #5a0080 !important;
 }
-
-/* .teal-text {
-  color: #0b5e86 !important;
-} */
 
 /* .teal */
 
-.teal {
-  background-color: #008073 !important;
+.purple {
+  background-color: purple !important;
 }
 
 /* .teal {
