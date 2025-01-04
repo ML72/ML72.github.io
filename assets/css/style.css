@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #00796b;
+  color: purple;
   background-color: white;
 }
 /* main body */
@@ -135,12 +135,8 @@ body {
 
 /* main a -- links */
 
-/* a {
-  color: #009688;
-} */
-
 a {
-  color: #004d40;
+  color: #4d0000;
 }
 
 /* main blockqoute */
@@ -464,7 +460,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid purple !important;
 }
 
 #skills .card.large {
@@ -605,7 +601,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: purple;
     height: 56px;
     line-height: 56px;
   }
