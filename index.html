@@ -111,23 +111,25 @@
             class="mdi-social-school small"></i><span>Education</span></a>
       </li>
 
+      <!--
       <li class="bold">
         <a aria-label="Navigate to the Friends section" href="#friends" class="waves-effect waves-dark purple-text"><i
             class="mdi-social-group small"></i><span>Friends</span></a>
       </li>
+      -->
 
       <li class="bold">
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark purple-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
 
+      <!--
       <li class="bold">
-        <!-- <a aria-label="Open Michael's resume in a new tab" href="#resume" target="_blank"
+        <a aria-label="Open Michael's resume in a new tab" href="#resume" target="_blank"
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark purple-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Michael's WakaTime in a new tab" href="https://wakatime.com/@a9701426-a3b1-4f1d-9b01-6014ccf60854" target="_blank"
-        class="waves-effect waves-dark purple-text"><i class="mdi-file-folder-open small"></i><span>WakaTime :D</span></a>  
+          class="waves-effect waves-dark purple-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
+      -->
     </ul>
   </nav>
 
@@ -229,11 +231,9 @@
       <h3 class="page-title white-text purple">About</h3>
       <div class="container flow-text">
         <p>
-          I am an undergraduate computer science student at the University of Washington.
-
-          Thriving at the intersection between code and curiosity, I fuel my passion for learning by crafting technical solutions that tackle real-world challenges.
+          I am a graduate computer science student at Carnegie Mellon University, studying for a Masters of Intelligent Information Systems.
           
-          My main interests are machine learning and cloud systems: specifically, interactive data analysis and reinforcement learning, as well as architecting and engineering large-scale big-data cloud systems.
+          My main interests are machine learning and cloud systems: specifically, interactive data analysis and reinforcement learning, as well as architecting and engineering big-data cloud systems at scale.
         </p>
 
         <p>
@@ -264,35 +264,74 @@
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
+                <img alt="Amazon logo"
+                    src="./assets/img/exp-amazon-logo.jpg" class="responsive-img center-block" />
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://amazon.com" target="_blank"
+                      class="purple-text hoverline">Amazon</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Software Development Engineer Intern</div>
+            <ul>
+              <li>
+                Worked with Fulfillment by Amazon (FBA) Reimbursement team
+              </li>
+              <li>
+                Designed, implemented, and deployed a full-stack internal chatbot to answer reimbursement related questions with an internal knowledge base, using retrieval-augmented generation (RAG)
+              </li>
+              <li>
+                Engineered prompts to optimize retrieval and generation, aligning with Helpful Honest Harmless (HHH) principle
+              </li>
+              <li>
+                <b>Skills:</b> AWS, Bedrock, Java, TypeScript, Kendra Knowledge Base, Prompt Engineering
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Jun 2025 - Aug 2025 | Seattle, USA</span>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
                 <img alt="UW logo"
                     src="./assets/img/exp-uwash-logo.jpg" class="responsive-img center-block" />
               </div>
               <div class="col s12 m10">
                 <p>
                   <span class="card-title"><a href="https://socialrl.cs.washington.edu/" target="_blank"
-                      class="purple-text hoverline">Social RL Lab @ UW</a></span>
+                      class="purple-text hoverline">University of Washington</a></span>
                 </p>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Research Assistant</div>
+            <div class="role brown-text text-darken-2">Undergraduate Research Assistant</div>
             <ul>
               <li>
-                Led project on improving robustness on the traveling salesman problem, published at NeurIPS MATH-AI 2024
+                Conducted research in the Social Reinforcement Learning lab, advised by Prof. Natasha Jaques
               </li>
               <li>
-                Currently working on new project seeking to improve robustness of robotic manipulation via use of an adversarial curriculum
+                Led project on improving neural combinatorial solver robustness to different distributions on the traveling salesman problem, <b>published at NeurIPS MATH-AI</b>
               </li>
               <li>
-                <b>Skills:</b> Adversarial Robustness, Machine Learning, Reinforcement Learning, Robotics, Python, PyTorch, NumPy, Isaac Lab
+                Worked on adversarial robotic manipulation project, <b>funded by Amazon grant</b>
+              </li>
+              <li>
+                <b>Skills:</b> Machine Learning, Robotics, Python, PyTorch, NumPy, Matplotlib, Isaac Lab
               </li>
             </ul>
           </div>
           <div class="card-action">
-            <span>Sep 2024 - Present | Seattle, USA</span>
+            <span>Sep 2024 - Jun 2025 | Seattle, USA</span>
           </div>
         </div>
 
-        <!-- Experience 2 -->
+        <!-- Experience 3 -->
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -303,23 +342,20 @@
               <div class="col s12 m10">
                 <p>
                   <span class="card-title"><a href="https://www.sreading.org/" target="_blank"
-                      class="purple-text hoverline">SReading</a></span>
+                      class="purple-text hoverline">SReading LLC</a></span>
                 </p>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Machine Learning Engineer</div>
+            <div class="role brown-text text-darken-2">Machine Learning Engineer Intern</div>
             <ul>
               <li>
-                Designed and implemented a scalable architecture for machine learning microservices within an AKS cluster, with efficiency and fault-tolerance in mind
+                Developed an innovative study plan system, using <b>bandits-based algorithms</b> to optimize educational outcomes
               </li>
               <li>
-                Developed an innovative study plan system, using bandits-based algorithms to optimize educational outcomes
+                Engineered an adaptive reading recommendation system which personalizes readings based on difficulty and topics, using aggregate user data tracked in up to 8 different ways
               </li>
               <li>
-                Engineered an adaptive reading recommendation system which personalizes readings based on difficulty, using aggregate user data tracked in up to 8 different ways
-              </li>
-              <li>
-                Exposed 3 groups of Flask RESTful APIs for seamless communication between services
+                Exposed 3 groups of Flask RESTful APIs for seamless communication between microservices
               </li>
               <li>
                 <b>Skills:</b> Machine Learning, Python, PyTorch, NumPy, Matplotlib, Flask, Pandas
@@ -327,7 +363,43 @@
             </ul>
           </div>
           <div class="card-action">
-            <span>Oct 2023 - Sep 2024 | Seattle, USA</span>
+            <span>Jun 2024 - Sep 2024 | Seattle, USA</span>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <img alt="UW logo"
+                    src="./assets/img/exp-uwash-logo.jpg" class="responsive-img center-block" />
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.washington.edu/" target="_blank"
+                      class="purple-text hoverline">University of Washington</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Undergraduate Teaching Assistant</div>
+            <ul>
+              <li>
+                Worked with around <b>150 students</b> in the course, teaching core machine learning concepts such as regression, classification, and clustering
+              </li>
+              <li>
+                Taught weekly quiz section for assigned group of <b>20 students</b> to review and practice
+              </li>
+              <li>
+                Held weekly office hours to clarify concepts and answer questions
+              </li>
+              <li>
+                <b>Skills:</b> Machine Learning, Python, PyTorch, NumPy, Matplotlib, Pandas
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Mar 2024 - Jun 2024 | Seattle, USA</span>
           </div>
         </div>
 
@@ -549,24 +621,43 @@
         <div class="card">
           <div class="card-content">
             <p>
+              <span class="card-title"><a href="https://www.cmu.edu/" target="_blank" class="purple-text hoverline">Carnegie Mellon University</a></span>
+            </p>
+            <p>
+              <b>Degree:</b> M.S. in Intelligent Information Systems
+              <br>
+              <b>GPA:</b> N/A
+            </p>
+          </div>
+          <div class="card-action">
+            <span>Aug 2025 - Present | Pittsburgh, Pennsylvania, USA</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <p>
               <span class="card-title"><a href="https://www.washington.edu/" target="_blank" class="purple-text hoverline">University of Washington</a></span>
             </p>
-            <p class="brown-text">Seattle, Washington, USA</p>
             <p>
               <b>Degree:</b> B.S. in Computer Science
               <br>
-              <b>Cumulative GPA:</b> 3.96/4.0
+              <b>GPA:</b> 3.96/4.0
             </p>
 
             <p>
               <b>Relevant Coursework:</b> Reinforcement Learning (579), Social Reinforcement Learning (599J), Interactive Learning (541), Deep Learning (493G), Machine Learning (446), Distributed Systems (452), Modern Algorithms (422), Computer Vision (455)
             </p>
           </div>
+          <div class="card-action">
+            <span>Sep 2022 - Jun 2025 | Seattle, Washington, USA</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Seventh Section: Friends -->
+    <!--
     <section id="friends" class="section scrollspy">
       <h3 class="page-title white-text purple">Friends</h3>
       <div class="container flow-text">
@@ -593,16 +684,17 @@
         </p>
       </div>
     </section>
+    -->
 
     <!-- Eight Section: Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text purple">Contact</h3>
       <div class="container">
         <p>
-          <a aria-label="Email Michael" href="mailto:ml10872@uw.edu" target="_blank" data-position="top"
+          <a aria-label="Email Michael" href="mailto:ml7@andrew.cmu.edu" target="_blank" data-position="top"
             data-tooltip="Email Michael" class="btn-floating btn-large waves-effect waves-light purple tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Michael" href="mailto:ml10872@uw.edu"
-              class="hoverline">ml10872@uw.edu</a></a>
+              class="fa fa-envelope"></i><a aria-label="Email Michael" href="mailto:ml7@andrew.cmu.edu"
+              class="hoverline">ml7@andrew.cmu.edu</a></a>
         </p>
         <p>
           <a aria-label="View Michael on GitHub" href="http://github.com/ML72" target="_blank"
