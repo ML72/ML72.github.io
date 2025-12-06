@@ -1,6 +1,7 @@
 import { Card, CardContent, CardMedia, Typography, Box, Chip, Button, CardActions } from '@mui/material';
 import type { Project } from '../types';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 interface ProjectCardProps {
   project: Project;
@@ -11,15 +12,20 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <CardMedia
         component="img"
-        height="200"
+        height="280"
         image={project.image}
         alt={project.title}
-        sx={{ objectFit: 'cover' }}
+        sx={{ objectFit: 'contain' }}
       />
       <CardContent sx={{ flexGrow: 1 }}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 600 }}>
-          {project.title}
-        </Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', mb: 1 }}>
+          <Typography variant="h5" sx={{ fontWeight: 600 }}>
+            {project.title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 500 }}>
+            {project.year}
+          </Typography>
+        </Box>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
           {project.description}
         </Typography>
@@ -36,7 +42,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           </Box>
         )}
       </CardContent>
-      <CardActions sx={{ p: 2, pt: 0 }}>
+      <CardActions sx={{ p: 2, pt: 0, gap: 1 }}>
         <Button
           size="small"
           variant="contained"
@@ -44,9 +50,29 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          fullWidth
+          sx={{ flexGrow: 1 }}
         >
           View Project
+        </Button>
+        <Button
+          size="small"
+          variant="outlined"
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{
+            minWidth: '40px',
+            width: '40px',
+            height: '40px',
+            p: 0,
+            color: 'rgba(0, 0, 0, 0.7)',
+            borderColor: 'divider',
+            '&:hover': {
+              color: 'rgba(0, 0, 0, 0.9)',
+            },
+          }}
+        >
+          <GitHubIcon />
         </Button>
       </CardActions>
     </Card>
