@@ -13,15 +13,35 @@ export const WorkCard = ({ work }: WorkCardProps) => {
         <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
           <Box
             sx={{
-              backgroundColor: 'secondary.main',
               borderRadius: '12px',
-              p: 1.5,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
+              width: 60,
+              height: 60,
+              flexShrink: 0,
             }}
           >
-            <WorkIcon sx={{ color: 'white', fontSize: 28 }} />
+            {work.logo ? (
+              <img
+                src={work.logo}
+                alt={`${work.company} logo`}
+                style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              />
+            ) : (
+              <Box
+                sx={{
+                  backgroundColor: 'secondary.main',
+                  borderRadius: '12px',
+                  p: 1.5,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <WorkIcon sx={{ color: 'white', fontSize: 28 }} />
+              </Box>
+            )}
           </Box>
           <Box sx={{ flex: 1 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 600 }}>

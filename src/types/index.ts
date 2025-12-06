@@ -4,6 +4,7 @@ export interface Education {
   period: string;
   description?: string;
   gpa?: string;
+  logo?: string;
 }
 
 export interface Project {
@@ -22,6 +23,7 @@ export interface WorkExperience {
   period: string;
   description: string[];
   location?: string;
+  logo?: string;
 }
 
 export interface TechStack {

@@ -13,15 +13,35 @@ export const EducationCard = ({ education }: EducationCardProps) => {
         <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
           <Box
             sx={{
-              backgroundColor: 'primary.main',
               borderRadius: '12px',
-              p: 1.5,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
+              width: 60,
+              height: 60,
+              flexShrink: 0,
             }}
           >
-            <SchoolIcon sx={{ color: 'white', fontSize: 28 }} />
+            {education.logo ? (
+              <img
+                src={education.logo}
+                alt={`${education.institution} logo`}
+                style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              />
+            ) : (
+              <Box
+                sx={{
+                  backgroundColor: 'primary.main',
+                  borderRadius: '12px',
+                  p: 1.5,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <SchoolIcon sx={{ color: 'white', fontSize: 28 }} />
+              </Box>
+            )}
           </Box>
           <Box sx={{ flex: 1 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 600 }}>

@@ -2,8 +2,8 @@ import type { Education, Project, WorkExperience, TechStack } from '../types';
 
 export const personalInfo = {
   name: 'Michael Li',
-  title: 'AI Researcher & Software Developer',
-  description: 'Curious, quick-learning, and passionate researcher who enjoys crafting creative solutions to complex real-world problems using cutting-edge technologies.',
+  title: 'Machine Learning Engineer & Researcher',
+  description: 'Curious, quick-learning, and passionate applied researcher who enjoys crafting creative solutions to complex real-world problems using cutting-edge technologies.',
   email: 'ml7@andrew.cmu.edu',
   github: 'https://github.com/ML72',
   linkedin: 'https://linkedin.com/in/michaelli11233',
@@ -13,8 +13,10 @@ export const education: Education[] = [
   {
     degree: 'Master of Science in Intelligent Information Systems',
     institution: 'Carnegie Mellon University',
-    period: 'Aug 2025 - Present',
-    description: 'Graduate studies in AI and intelligent systems',
+    period: 'Aug 2025 - Dec 2026',
+    gpa: '4.0/4.0',
+    description: 'Relevant Coursework: Advanced Natural Language Processing (11-711), Search Engines (11-642)',
+    logo: '/icons/school_cmu.png',
   },
   {
     degree: 'Bachelor of Science in Computer Science',
@@ -22,6 +24,7 @@ export const education: Education[] = [
     period: 'Sep 2022 - Jun 2025',
     gpa: '3.96/4.0',
     description: 'Relevant Coursework: Reinforcement Learning (579), Social Reinforcement Learning (599J), Interactive Learning (541), Deep Learning (493G), Machine Learning (446), Distributed Systems (452), Modern Algorithms (422), Computer Vision (455)',
+    logo: '/icons/school_uw.png',
   },
 ];
 
@@ -59,6 +62,7 @@ export const workExperience: WorkExperience[] = [
     company: 'Amazon',
     period: 'Jun 2025 - Aug 2025',
     location: 'Seattle, USA',
+    logo: '/icons/work_amazon.png',
     description: [
       'Worked with Fulfillment by Amazon (FBA) Reimbursement team',
       'Designed, implemented, and deployed a full-stack internal chatbot to answer reimbursement related questions with an internal knowledge base, using retrieval-augmented generation (RAG)',
@@ -71,6 +75,7 @@ export const workExperience: WorkExperience[] = [
     company: 'University of Washington - Social Reinforcement Learning Lab',
     period: 'Sep 2024 - Jun 2025',
     location: 'Seattle, USA',
+    logo: '/icons/work_uw.png',
     description: [
       'Conducted research in the Social Reinforcement Learning lab, advised by Prof. Natasha Jaques',
       'Led project on improving neural combinatorial solver robustness to different distributions on the traveling salesman problem, published at NeurIPS MATH-AI',
@@ -83,6 +88,7 @@ export const workExperience: WorkExperience[] = [
     company: 'SReading LLC',
     period: 'Jun 2024 - Sep 2024',
     location: 'Seattle, USA',
+    logo: '/icons/work_sreading.png',
     description: [
       'Developed an innovative study plan system, using bandits-based algorithms to optimize educational outcomes',
       'Engineered an adaptive reading recommendation system which personalizes readings based on difficulty and topics, using aggregate user data tracked in up to 8 different ways',
@@ -95,6 +101,7 @@ export const workExperience: WorkExperience[] = [
     company: 'University of Washington',
     period: 'Mar 2024 - Jun 2024',
     location: 'Seattle, USA',
+    logo: '/icons/work_uw.png',
     description: [
       'Worked with around 150 students in the course, teaching core machine learning concepts such as regression, classification, and clustering',
       'Taught weekly quiz section for assigned group of 20 students to review and practice',
