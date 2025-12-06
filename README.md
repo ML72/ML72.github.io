@@ -4,6 +4,20 @@
 
 This repository contains code for my personal website, which can be viewed [here](https://ML72.github.io).
 
-## Credit
+## Local Development
 
-The current version of the website is based off of [Varad Bhogayata's portfolio template](https://github.com/varadbhogayata/varadbhogayata.github.io). To edit any version of the template, simply modify the `index.html` file as necessary.
+To start developing locally, first clone this repository and install packages:
+
+```
+git clone https://github.com/ML72/ML72.github.io.git
+cd ML72.github.io
+npm install
+```
+
+To start the development server:
+
+```
+npm run dev
+```
+
+Feel free to reuse the code in this repository for any purpose.
