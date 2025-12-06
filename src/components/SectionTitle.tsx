@@ -1,4 +1,7 @@
 import { Box, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
+
+const MotionBox = motion.create(Box);
 
 interface SectionTitleProps {
   title: string;
@@ -7,7 +10,13 @@ interface SectionTitleProps {
 
 export const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {
   return (
-    <Box sx={{ mb: 6, textAlign: 'center' }}>
+    <MotionBox
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      sx={{ mb: 6, textAlign: 'center' }}
+    >
       <Typography
         variant="h2"
         sx={{
@@ -15,6 +24,7 @@ export const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {
           background: 'linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
+          position: 'relative',
         }}
       >
         {title}
@@ -24,6 +34,6 @@ export const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {
           {subtitle}
         </Typography>
       )}
-    </Box>
+    </MotionBox>
   );
 };

@@ -1,6 +1,11 @@
 import { Box, Container, Typography, Button } from '@mui/material';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
+import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 import { personalInfo } from '../data/portfolioData';
+import { AnimatedBackground } from '../components/AnimatedBackground';
+
+const MotionBox = motion.create(Box);
 
 export const Hero = () => {
   return (
@@ -13,41 +18,76 @@ export const Hero = () => {
         overflow: 'hidden',
       }}
     >
+      <AnimatedBackground />
       <Container maxWidth="lg">
         <Box sx={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
-          <Typography
-            variant="h1"
-            sx={{
-              mb: 2,
-              fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
-            }}
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            Hi, I'm {personalInfo.name}
-          </Typography>
-          <Typography
-            variant="h4"
-            sx={{
-              mb: 4,
-              fontWeight: 400,
-              opacity: 0.95,
-              fontSize: { xs: '1.25rem', md: '1.75rem' },
-            }}
+            <Typography
+              variant="h1"
+              sx={{
+                mb: 2,
+                fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
+              }}
+            >
+              Hi, I'm {personalInfo.name}
+            </Typography>
+          </MotionBox>
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
           >
-            {personalInfo.title}
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              mb: 5,
-              maxWidth: 700,
-              mx: 'auto',
-              fontSize: '1.1rem',
-              opacity: 0.9,
-            }}
+            <Typography
+              variant="h4"
+              sx={{
+                mb: 4,
+                fontWeight: 400,
+                opacity: 0.95,
+                fontSize: { xs: '1.25rem', md: '1.75rem' },
+                minHeight: { xs: '2.5rem', md: '3rem' },
+              }}
+            >
+              <TypeAnimation
+                sequence={[
+                  'Machine Learning Engineer',
+                  2500,
+                  'AI Researcher',
+                  2500,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </Typography>
+          </MotionBox>
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
           >
-            {personalInfo.description}
-          </Typography>
-          <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Typography
+              variant="body1"
+              sx={{
+                mb: 5,
+                maxWidth: 700,
+                mx: 'auto',
+                fontSize: '1.1rem',
+                opacity: 0.9,
+              }}
+            >
+              {personalInfo.description}
+            </Typography>
+          </MotionBox>
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
+            sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}
+          >
             <Button
               variant="contained"
               size="large"
@@ -97,7 +137,7 @@ export const Hero = () => {
             >
               LinkedIn
             </Button>
-          </Box>
+          </MotionBox>
         </Box>
       </Container>
     </Box>

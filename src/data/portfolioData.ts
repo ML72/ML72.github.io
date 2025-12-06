@@ -2,7 +2,6 @@ import type { Education, Project, WorkExperience, TechStack } from '../types';
 
 export const personalInfo = {
   name: 'Michael Li',
-  title: 'Machine Learning Engineer & Researcher',
   description: 'Curious, quick-learning, and passionate applied researcher who enjoys crafting creative solutions to complex real-world problems using cutting-edge technologies.',
   email: 'ml7@andrew.cmu.edu',
   github: 'https://github.com/ML72',

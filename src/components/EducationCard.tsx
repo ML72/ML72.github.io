@@ -1,6 +1,9 @@
 import { Card, CardContent, Typography, Box } from '@mui/material';
+import { motion } from 'framer-motion';
 import SchoolIcon from '@mui/icons-material/School';
 import type { Education as EducationType } from '../types';
+
+const MotionCard = motion.create(Card);
 
 interface EducationCardProps {
   education: EducationType;
@@ -8,7 +11,18 @@ interface EducationCardProps {
 
 export const EducationCard = ({ education }: EducationCardProps) => {
   return (
-    <Card>
+    <MotionCard
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      sx={{
+        transition: 'box-shadow 0.3s ease',
+        '&:hover': {
+          boxShadow: '0 4px 20px rgba(102, 126, 234, 0.12)',
+        },
+      }}
+    >
       <CardContent>
         <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
           <Box
@@ -66,6 +80,6 @@ export const EducationCard = ({ education }: EducationCardProps) => {
           </Box>
         </Box>
       </CardContent>
-    </Card>
+    </MotionCard>
   );
 };

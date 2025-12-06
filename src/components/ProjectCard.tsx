@@ -1,7 +1,10 @@
 import { Card, CardContent, CardMedia, Typography, Box, Chip, Button, CardActions } from '@mui/material';
+import { motion } from 'framer-motion';
 import type { Project } from '../types';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
+const MotionCard = motion.create(Card);
 
 interface ProjectCardProps {
   project: Project;
@@ -9,7 +12,22 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+    <MotionCard
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      whileHover={{ y: -6 }}
+      sx={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        transition: 'box-shadow 0.3s ease',
+        '&:hover': {
+          boxShadow: '0 8px 24px rgba(102, 126, 234, 0.15)',
+        },
+      }}
+    >
       <CardMedia
         component="img"
         height="280"
@@ -75,6 +93,6 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           <GitHubIcon />
         </Button>
       </CardActions>
-    </Card>
+    </MotionCard>
   );
 };
