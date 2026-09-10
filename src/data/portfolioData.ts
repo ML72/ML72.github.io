@@ -14,7 +14,7 @@ export const education: Education[] = [
     institution: 'Carnegie Mellon University',
     period: 'Aug 2025 - Dec 2026',
     gpa: '4.0/4.0',
-    description: 'Relevant Coursework: Advanced Natural Language Processing (11-711), Search Engines (11-642)',
+    description: 'Relevant Coursework: Advanced Natural Language Processing (11-711), AI Agents (11-768), LLM Systems (11-868), Multimodal Machine Learning (11-777), Search Engines (11-642), Machine Learning (10-601)',
     logo: '/icons/school_cmu.png',
   },
   {
@@ -72,7 +72,20 @@ export const projects: Project[] = [
 
 export const workExperience: WorkExperience[] = [
   {
-    id: '1',
+    id: '5',
+    title: 'Machine Learning Engineer Intern',
+    company: 'Pinterest',
+    period: 'May 2026 - Aug 2026',
+    location: 'Palo Alto, USA',
+    logo: '/icons/work_pinterest.png',
+    description: [
+      'Worked with Ads Vertical team',
+      'Designed, implemented, and deployed a dynamic ad module title generation and serving pipeline, processing 20,000 titles weekly and directing affecting Search, a surface accounting for 14% of Pinterest revenue',
+      'Conducted A/B experimentation and successfully increased average click-through rate by 0.7%',
+    ],
+  },
+  {
+    id: '4',
     title: 'Software Development Engineer Intern',
     company: 'Amazon',
     period: 'Jun 2025 - Aug 2025',
@@ -85,7 +98,7 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    id: '2',
+    id: '3',
     title: 'Research Assistant',
     company: 'University of Washington - Social Reinforcement Learning Lab',
     period: 'Sep 2024 - Jun 2025',
@@ -98,7 +111,7 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    id: '3',
+    id: '2',
     title: 'Machine Learning Engineer Intern',
     company: 'SReading LLC',
     period: 'Jun 2024 - Sep 2024',
@@ -111,7 +124,7 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    id: '4',
+    id: '1',
     title: 'CSE 416 Teaching Assistant',
     company: 'University of Washington',
     period: 'Mar 2024 - Jun 2024',
