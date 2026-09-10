@@ -15,8 +15,8 @@ function App() {
       <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Hero />
         <Education />
-        <Projects />
         <WorkExperience />
+        <Projects />
         <TechStack />
         <Footer />
       </Box>
